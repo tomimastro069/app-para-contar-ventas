@@ -14,8 +14,8 @@ const STORAGE_KEY = "cuenta-facil-products";
 const COLORS = ["#F5A623", "#14B8A6", "#8B5CF6", "#F43F5E", "#3B82F6", "#84CC16"];
 
 const initialProducts: Product[] = [
-  { id: "1", name: "Tarjeta Amarilla", price: 12, count: 0, color: COLORS[0] },
-  { id: "2", name: "Tarjeta Turquesa", price: 18.5, count: 0, color: COLORS[1] },
+  { id: "1", name: "PROMO1", price: 12000, count: 0, color: COLORS[0] },
+  { id: "2", name: "PROMO2", price: 18000, count: 0, color: COLORS[1] },
 ];
 
 function Icon({
@@ -103,11 +103,11 @@ export default function App() {
         <header className="flex items-center justify-between px-6 pb-5 pt-7">
           <div>
             <p className="mb-1 text-xs font-bold uppercase tracking-[0.18em] text-[#77817d]">
-              Mi negocio
+              Ruta 52
             </p>
             <h1 className="text-[28px] font-black tracking-[-0.04em]">
               {activeTab === "counter"
-                ? "Cuenta fácil"
+                ? "Contador Birras"
                 : activeTab === "summary"
                   ? "Resumen del día"
                   : "Ajustes"}
@@ -466,9 +466,8 @@ function NavButton({
   return (
     <button
       onClick={onClick}
-      className={`flex flex-col items-center gap-1 rounded-[17px] py-2.5 text-[11px] font-bold transition ${
-        active ? "bg-[#e7eee9] text-[#1c2925]" : "text-[#929a96]"
-      }`}
+      className={`flex flex-col items-center gap-1 rounded-[17px] py-2.5 text-[11px] font-bold transition ${active ? "bg-[#e7eee9] text-[#1c2925]" : "text-[#929a96]"
+        }`}
     >
       {children}
       {label}
@@ -540,7 +539,7 @@ function ProductModal({
         <label className="mb-5 block">
           <span className="mb-2 block text-sm font-bold">Precio por unidad</span>
           <div className="flex items-center rounded-2xl border border-[#dfe4de] bg-white px-4 focus-within:border-[#1c2925] focus-within:ring-2 focus-within:ring-[#1c2925]/10">
-            <span className="font-bold text-[#7d8682]">€</span>
+            <span className="font-bold text-[#7d8682]">$</span>
             <input
               type="number"
               inputMode="decimal"
