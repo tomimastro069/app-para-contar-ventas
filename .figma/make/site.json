@@ -1,0 +1,10 @@
+{
+  "description": "Registra ventas de dos tipos de tarjetas, configura productos y precios, y calcula ganancias y el producto más vendido para facilitar el control del negocio.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
