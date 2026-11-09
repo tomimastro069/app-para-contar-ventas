@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Cuenta Facil</string>
-    <string name="title_activity_main">Cuenta Facil</string>
+    <string name="app_name">ContadorRuta52</string>
+    <string name="title_activity_main">ContadorRuta52</string>
     <string name="package_name">com.cuentafacil.app</string>
     <string name="custom_url_scheme">com.cuentafacil.app</string>
 </resources>
