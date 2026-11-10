@@ -44,7 +44,7 @@ function Icon({
 }
 
 const formatMoney = (value: number) =>
-  new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" }).format(value);
+  new Intl.NumberFormat("es-AR", { style: "currency", currency: "ARS" }).format(value);
 
 export default function App() {
   const [products, setProducts] = useState<Product[]>(() => {
